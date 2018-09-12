@@ -1,0 +1,36 @@
+{
+  "name": "fixed-math",
+  "version": "0.1.0",
+  "description": "Converts a decimal number using fixed-point notation, avoiding the conversion from number to string of Number.toFixed, and allowing the user to choose the approximation method to be used",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "prebuild": "npm run clean && npm run lint",
+    "build": "tsc --declaration",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "test": "jest --coverage --verbose",
+    "test:ci": "npm run build && npm run test",
+    "watch-test": "npm run test -- --watchAll"
+  },
+  "files": [
+    "./dist"
+  ],
+  "keywords": [
+    "math",
+    "approximation",
+    "typescript",
+    "fixed",
+    "performance"
+  ],
+  "author": "Alberto Schiabel <alberto.schiabel@gmail.com> (https://github.com/jkomyno)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^23.3.2",
+    "jest": "^23.6.0",
+    "rimraf": "^2.6.2",
+    "ts-jest": "^23.1.4",
+    "tslint": "^5.11.0",
+    "typescript": "^3.0.3"
+  }
+}
