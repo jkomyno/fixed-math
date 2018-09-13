@@ -53,5 +53,14 @@ Just take a look at the signature of the method:
 const fixedMath: FixedMath = (number, precision = 2, method = 'round');
 ```
 
+Please take a look at the tests to check out every possible nuance and example of using this package.
+
+## Related packages
+
+- [is-equally-spaced](https://github.com/jkomyno/is-equally-spaced): utility function that given an array of numbers, evaluates wether or not every element is equally spaced, i.e. if every subsequent couple of numbers in the array has the same distance.
+
 ## Contributing
-Of course PRs are welcome!
+
+Of course PRs are welcome! Before contributing, however, please be sure to run `npm run test:ci` or `yarn test:ci`,
+in order to check if the code you wrote respects the linting conventions and if it doesn't break any test. Please
+try to keep the unit test code coverage at 100%.
