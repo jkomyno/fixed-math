@@ -12,14 +12,8 @@ It also allows the user to choose the approximation method to be used
 
 ## Installing
 
-- with npm:
 ```sh
 npm install --save fixed-math
-```
-
-- with yarn
-```sh
-yarn add fixed-math
 ```
 
 ## Typings
